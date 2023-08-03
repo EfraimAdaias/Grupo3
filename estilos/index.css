@@ -1,19 +1,59 @@
 html {
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 .fundo-gradiente {
-    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
+    background-color: linear-gradient(90deg, rgb(205 255 216 / 32%), rgb(148 185 255 / 32%));
+    padding: 0;
 }
 
 .boas-vindas {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: auto;
+    padding-bottom: 50px;
+    background-image: url(../imagens/fundo-inicio-section02.png);
+    background-size: cover;
+}
+
+.boas-vindas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boas-vindas .div01 {
+    margin-left: 13rem;
+    margin-right: 2rem;
+}
+
+.boas-vindas .div02 {
+    margin-right: 10rem;
+}
+
+.boas-vindas div button {
+    margin-top: 10px;
+}
+
+.boas-vindas div iframe {
+    padding-top: 60px;
+    height: 15rem;
+    width: 25rem;
+
+}
+
+.boas-vindas2 {
+    display: flex;
+    padding-top: 60px;
     width: 70%;
     margin: auto;
     gap: 5%;
 }
 
-.boas-vindas>* {
+.boas-vindas2 > * {
     flex: 1;
 }
 
@@ -21,11 +61,10 @@ html {
     padding-top: 60px;
 }
 
-.texto-boas-vindas h1,
-.texto-boas-vindas h2 {
+.texto-boas-vindas h1 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .texto-boas-vindas h1 {
@@ -33,14 +72,17 @@ html {
 }
 
 .texto-boas-vindas h2 {
+    font-weight: bold;
+    font-size: 26px;
     color: #004AAD;
+    margin-bottom: 10px;
 }
 
 .texto-boas-vindas h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 30px;
+    line-height: 26px;
 }
 
 .botao {
@@ -48,9 +90,11 @@ html {
     background-color: #004aad;
     color: white;
     font-weight: bold;
+    font-size: 16px;
     padding: 10px 35px;
     border-radius: 20px;
-    text-decoration: none;
+    cursor: pointer;
+    border: 0;
 }
 
 .botao:hover {
@@ -88,7 +132,8 @@ html {
 }
 
 .carrossel figure>img {
-    height: 350px;
+    height: 90%;
+    margin-top: 3rem;
     grid-area: 1/1/4/2;
     z-index: 1;
 }
@@ -153,25 +198,31 @@ html {
 
 /* Responsividade*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 280px) and (max-width: 1024px){
     .boas-vindas {
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
+        padding-bottom: 8px;
     }
 
-    .carrossel figure>img {
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .texto-boas-vindas {
+    .boas-vindas div iframe {
+        display: flex;
+        margin-left: 15rem;
+        width: 70vw;
+        height: 20vh;
         padding-top: 20px;
     }
 
-    .carrossel figure>img {
-        height: 200px;
+    .boas-vindas2 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 4rem;
     }
 
+    .botao {
+        margin-top: 6rem;
+    }
+    .texto-boas-vindas {
+        padding-top: 20px;
+    }
 }
