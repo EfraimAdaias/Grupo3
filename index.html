@@ -43,7 +43,8 @@
             <ul class="opcoes-menu">
                 <li><a href="index.html" class="ativo">Início</a></li>
                 <li><a href="./html/sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="#" class="submenu-artigos">Artigos e Mais <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+                <li><a href="#" class="submenu-artigos">Artigos e Mais <i
+                            class="fa-solid fa-chevron-down fa-2xs"></i></a>
                     <ul class="opcoes-submenu">
                         <li><a href="./html/artigos-e-mais.html">O que são doenças mentais?</a></li>
                         <li><a href="./html/submenu/ajuda.html">Como você pode ajudar?</a></li>
@@ -61,33 +62,37 @@
     </header>
 
     <main class="fundo-gradiente">
-        <section class="boas-vindas">
-            <div class="div01">
+        <div class="div-fundo-boas-vindas">
+            <section class="boas-vindas">
                 <article class="texto-boas-vindas">
-                    <h1>Boas-Vindas!</h1>
-                    <h2>Parabéns, não desista, você já é um vencedor!</h2>
-                    <h3>Ficamos feliz que Você tenha chegado até aqui.<br>
-                        Queremos te ajudar a encontrar ajuda especializada o mais rápido possível.<br>
-                        Antes eu te convido a assistir o vídeo ao lado para que você entenda ainda mais sobre como o site funciona!</h3>
+                    <iframe src="https://www.youtube.com/embed/WAlM_Ronapk" title="Raizes da Cura - Pitch de Venda"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </article>
-            </div>
-            <div class="div02">
-                <iframe src="https://www.youtube.com/embed/WAlM_Ronapk" title="Raizes da Cura - Pitch de Venda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <a href="./html/ache-ajuda.html"><button class="botao" type="submit">Encontrar ajuda agora!</button></a>
-            </div>
-        </section>
-        <section class="boas-vindas2">
-            <article class="conteiner-carrossel">
-                <!-- O conteúdo do carrossel é montado dinamicamente pelo carrosel.js -->
-            </article>
-            <article class="texto-boas-vindas">
-                <h1>Você de bem com a sua saúde mental!</h1>
-                <h2>Saiba mais...</h2>
-                <h3>Precisa de ajuda ou quer ajudar? <br>
-                    Cadastre-se e faça parte da nossa comunidade.</h3>
-                <a href="./html/cadastre-se.html"><button class="botao" type="submit">Cadastre-se!</button></a>
-            </article>
-        </section>
+                <article class="texto-boas-vindas">
+                    <h1>Boas Vindas!</h1>
+                    <h2>Não sabe por onde começar?</h2>
+                    <h3>Veja o vídeo e descubra como nosso site funciona e como você pode encontrar ajuda
+                        especializada...</h3>
+                    <a class="botao" href="./html/ache-ajuda.html">Encontre ajuda!</a>
+                </article>
+            </section>
+        </div>
+        <div class="div-fundo-efeito">
+            <section class="boas-vindas">
+                <article class="texto-boas-vindas">
+                    <h1>Você é nossa prioridade!</h1>
+                    <h2>Aprenda mais ou cadastre-se...</h2>
+                    <h3>Precisa de ajuda ou quer ajudar? <br>
+                        Cadastre-se e faça parte da nossa comunidade.</h3>
+                    <a class="botao" href="./html/cadastre-se.html">Cadastre-se!</a>
+                </article>
+                <article class="conteiner-carrossel">
+                    <!-- O conteúdo do carrossel é montado dinamicamente pelo carrosel.js -->
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer class="fundo-gradiente">
@@ -128,9 +133,9 @@
             </nav>
         </div>
     </footer>
-    
+
     <div class="ir-topo">
-       <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i></a>
+        <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i></a>
     </div>
 
     <div class="cookies">

@@ -1,88 +1,67 @@
 html {
     scroll-behavior: smooth;
-    text-decoration: none;
 }
 
 .fundo-gradiente {
-    background-color: linear-gradient(90deg, rgb(205 255 216 / 32%), rgb(148 185 255 / 32%));
+    background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
     padding: 0;
 }
 
 .boas-vindas {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    margin: auto;
-    padding-bottom: 50px;
-    background-image: url(../imagens/fundo-inicio-section02.png);
-    background-size: cover;
-}
-
-.boas-vindas div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.boas-vindas .div01 {
-    margin-left: 13rem;
-    margin-right: 2rem;
-}
-
-.boas-vindas .div02 {
-    margin-right: 10rem;
-}
-
-.boas-vindas div button {
-    margin-top: 10px;
-}
-
-.boas-vindas div iframe {
-    padding-top: 60px;
-    height: 15rem;
-    width: 25rem;
-
-}
-
-.boas-vindas2 {
-    display: flex;
-    padding-top: 60px;
     width: 70%;
     margin: auto;
     gap: 5%;
 }
 
-.boas-vindas2 > * {
+.boas-vindas>* {
     flex: 1;
 }
 
 .texto-boas-vindas {
-    padding-top: 60px;
+    margin-bottom: 5rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .texto-boas-vindas h1 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.texto-boas-vindas h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
     color: #ef0189;
 }
 
 .texto-boas-vindas h2 {
+    font-size: 24px;
     font-weight: bold;
-    font-size: 26px;
+    margin-bottom: 15px;
     color: #004AAD;
-    margin-bottom: 10px;
 }
 
 .texto-boas-vindas h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 26px;
+    line-height: 1.8rem;
+}
+
+.boas-vindas article iframe {
+    height: 210px;
+    width: 90%;
+}
+
+.div-fundo-boas-vindas {
+    background-image: url(../imagens/fundo-inicio-section02.png);
+    background-size: cover;
+    padding-top: 2.5rem;
+}
+
+.div-fundo-efeito {
+    background-image: url(../imagens/fundo-inicio-02.png);
+    background-size: cover;
 }
 
 .botao {
@@ -90,11 +69,11 @@ html {
     background-color: #004aad;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    width: 120px;
+    text-align: center;
     padding: 10px 35px;
     border-radius: 20px;
-    cursor: pointer;
-    border: 0;
+    text-decoration: none;
 }
 
 .botao:hover {
@@ -105,8 +84,6 @@ html {
     display: flex;
     flex: 1;
     flex-direction: column;
-    /* width: 524px; */
-    margin-bottom: 25px;
 }
 
 .carrossel img {
@@ -132,8 +109,7 @@ html {
 }
 
 .carrossel figure>img {
-    height: 90%;
-    margin-top: 3rem;
+    height: 290px;
     grid-area: 1/1/4/2;
     z-index: 1;
 }
@@ -198,31 +174,21 @@ html {
 
 /* Responsividade*/
 
-@media screen and (min-width: 280px) and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .boas-vindas {
-        flex-direction: column;
-        padding-bottom: 8px;
-    }
-
-    .boas-vindas div iframe {
         display: flex;
-        margin-left: 15rem;
-        width: 70vw;
-        height: 20vh;
-        padding-top: 20px;
-    }
-
-    .boas-vindas2 {
         flex-direction: column;
-        gap: 30px;
         align-items: center;
-        padding-bottom: 4rem;
+        justify-content: center;
     }
 
-    .botao {
-        margin-top: 6rem;
+    .boas-vindas article iframe {
+        height: 30vh;
+        width: 70vw;
     }
-    .texto-boas-vindas {
-        padding-top: 20px;
+    .carrossel figure > img {
+        margin-top: -10px;
+        height: 80%;
     }
+
 }
