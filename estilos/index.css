@@ -14,7 +14,7 @@ html {
     gap: 5%;
 }
 
-.boas-vindas>* {
+.boas-vindas > * {
     flex: 1;
 }
 
@@ -51,6 +51,7 @@ html {
 .boas-vindas article iframe {
     height: 210px;
     width: 90%;
+    border-radius: 5% 5%/73%;
 }
 
 .div-fundo-boas-vindas {
@@ -62,6 +63,13 @@ html {
 .div-fundo-efeito {
     background-image: url(../imagens/fundo-inicio-02.png);
     background-size: cover;
+}
+
+.boas-vindas2 {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    gap: 5%;
 }
 
 .botao {
@@ -182,13 +190,22 @@ html {
         justify-content: center;
     }
 
+    .boas-vindas2 {
+        flex-direction: column;
+    }
+
     .boas-vindas article iframe {
         height: 30vh;
         width: 70vw;
     }
+
+    .texto-boas-vindas {
+        margin: 20px;
+    }
+
     .carrossel figure > img {
         margin-top: -10px;
-        height: 80%;
+        height: 95%;
     }
 
 }
