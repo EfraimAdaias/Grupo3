@@ -4,7 +4,6 @@ html {
 
 .fundo-gradiente {
     background: linear-gradient(90deg, rgb(205 255 216 / 52%), rgb(148 185 255 / 52%));
-    padding: 0;
 }
 
 .boas-vindas {
@@ -14,62 +13,34 @@ html {
     gap: 5%;
 }
 
-.boas-vindas > * {
+.boas-vindas>* {
     flex: 1;
 }
 
 .texto-boas-vindas {
-    margin-bottom: 5rem;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 60px;
+}
+
+.texto-boas-vindas h1,
+.texto-boas-vindas h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .texto-boas-vindas h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 15px;
     color: #ef0189;
 }
 
 .texto-boas-vindas h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
     color: #004AAD;
 }
 
 .texto-boas-vindas h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
-    line-height: 1.8rem;
-}
-
-.boas-vindas article iframe {
-    height: 210px;
-    width: 90%;
-    border-radius: 5% 5%/73%;
-}
-
-.div-fundo-boas-vindas {
-    background-image: url(../imagens/fundo-inicio-section02.png);
-    background-size: cover;
-    padding-top: 2.5rem;
-}
-
-.div-fundo-efeito {
-    background-image: url(../imagens/fundo-inicio-02.png);
-    background-size: cover;
-}
-
-.boas-vindas2 {
-    display: flex;
-    width: 70%;
-    margin: auto;
-    gap: 5%;
+    line-height: 30px;
 }
 
 .botao {
@@ -77,8 +48,6 @@ html {
     background-color: #004aad;
     color: white;
     font-weight: bold;
-    width: 120px;
-    text-align: center;
     padding: 10px 35px;
     border-radius: 20px;
     text-decoration: none;
@@ -92,6 +61,8 @@ html {
     display: flex;
     flex: 1;
     flex-direction: column;
+    /* width: 524px; */
+    margin-bottom: 25px;
 }
 
 .carrossel img {
@@ -117,7 +88,7 @@ html {
 }
 
 .carrossel figure>img {
-    height: 290px;
+    height: 350px;
     grid-area: 1/1/4/2;
     z-index: 1;
 }
@@ -184,28 +155,23 @@ html {
 
 @media screen and (max-width: 1024px) {
     .boas-vindas {
-        display: flex;
         flex-direction: column;
+        gap: 30px;
         align-items: center;
-        justify-content: center;
     }
 
-    .boas-vindas2 {
-        flex-direction: column;
+    .carrossel figure>img {
+        height: 300px;
     }
+}
 
-    .boas-vindas article iframe {
-        height: 12rem;
-        width: 70vw;
-    }
-
+@media screen and (max-width: 720px) {
     .texto-boas-vindas {
-        margin: 20px;
+        padding-top: 20px;
     }
 
-    .carrossel figure > img {
-        margin-top: -10px;
-        height: 95%;
+    .carrossel figure>img {
+        height: 200px;
     }
 
 }

@@ -78,6 +78,15 @@ body {
     box-shadow: 2px 4px 4px #00000048;
 }
 
+.desenvolvedores article figure {
+    flex: 2;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .desenvolvedores article .descricao-desenvolvedor {
     flex: 5;
     align-self: center;
@@ -141,43 +150,8 @@ body {
     display: flex;
 }
 
-.desenvolvedores .quebra-cabeça {
-    border-radius: 20px;
-    width: 10rem;
-    height: 10rem;
-    box-shadow: 2px 4px 4px #696969c0;
-}
-
-.secao-implementacoes {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    margin-top: -3rem;
-    background-color: #E0F5FD;
-    width: 70%;
-    height: 26rem;
-    border-radius: 20px;
-    box-shadow: 2px 4px 4px #00000048;
-}
-
-.secao-implementacoes p {
-    color: black;
-    margin: 2rem;
-    padding-top: 2rem;
-    text-indent: 2rem;
-    line-height: 1.4rem;
-    text-align: justify;
-}
-
-.secao-implementacoes div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10rem;
-}
-
-.secao-implementacoes table {
-    margin-left: 5rem;
+.desenvolvedores table {
+    flex: 4;
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
@@ -186,36 +160,30 @@ body {
     border-style: hidden;
 }
 
-.secao-implementacoes .th {
+
+.desenvolvedores th {
     font-weight: bold;
     font-size: 18px;
-    padding: 1rem;
+    padding: 20px;
     color: #FEFEFE;
     background-color: #ef0189;
     text-align: center;
 }
 
-.secao-implementacoes th {
+table th,
+table td {
     background-color: #fefefefa;
-    height: 3rem;
-    padding-inline-end: 3rem;
-    padding-inline-start: 3rem;
+    padding: 0 10px;
+    width: 50%;
     box-shadow: 2px 4px 4px #696969c0;
+    vertical-align: middle;
     border: 1px solid #696969c0;
 }
 
-.secao-implementacoes tr {
-    background-color: #fefefefa;
-    box-shadow: 2px 4px 4px #696969c0;
-    border: 1px solid #696969c0;
-}
-
-.secao-implementacoes img {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height: 14rem;
+.desenvolvedores .quebra-cabeça {
     border-radius: 20px;
+    width: 250px;
+    height: 250px;
     box-shadow: 2px 4px 4px #696969c0;
 }
 
